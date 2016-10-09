@@ -1,54 +1,52 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8" >
-  <link rel="stylesheet" type="text/css" href="main.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <title>Gregslist</title>
+  <head>
+    <meta charset="utf-8" >
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Gregslist</title>
+  </head>
 
-</head>
+  <body>
+    <header>
+      <nav class="container">
+        <a class="logo"><h1>Greg's List</h1></a>
+        <a class="nav-link" href="#">Post</a>
+        <a class="nav-link" href="#">Account</a>
+      </nav>
+    </header>
 
-<body>
-  <header>
-  <nav class="container">
-    <a class="logo"><h1>Greg's List</h1></a>
-      <a class="nav-link" href="#">Post</a>
-      <a class="nav-link" href="#">Account</a>
-    </ul>
-  </nav>
-  </header>
-
-  <main>
-    <!-- <h3>Search Jobs</h3> -->
-    <div class="searchbar">
-      <input type="search" name="search" class="inputbox" placeholder="Search software jobs">
-      <button type="button" name="button"</button>
-      </div>
+    <main>
+      <!-- <h3>Search Jobs</h3> -->
+      <form class="searchbar">
+        <input type="text" name="search" class="inputbox" placeholder="Search software jobs">
+        <button id="magnifier" type="submit" name="button"></button>
+      </form>
+      
       <nav class="navigate-pages">
         <ul>
-          <li>&lt prev</li>
-          <li>1 to 100 of 179</li>
-          <li>&gt next</li>
+          <li class="left">&lt prev</li>
+          <li class="middle">1 to 100 of 179</li>
+          <li class="right">&gt next</li>
         </ul>
       </nav>
-    </div>
-    <table>
-      <tr>
-        <td>June 22</td>
-        <th><a href="#">Technical Project Manager</a></th>
-        <td>Midtown East</td>
-      </tr>
-      <tr>
-        <td>June 21</td>
-        <th><a href="#">Frontend Developer</a></th>
-        <td>So Ho</td>
-      </tr>
-      <tr>
-        <td>June 22</td>
-        <th><a href="#">Senior Python Developer / Cofounder</a></th>
-        <td>Flatiron</td>
-      </tr>
-    </table>
-  </main>
-</body>
+      <table>
+        <tr>
+          <td class="grey">June 22</td>
+          <td class="jobTitle"><a href="#">Technical Project Manager</a></td>
+          <td class="grey">Midtown East</td>
+        </tr>
+        <tr>
+          <td class="grey">June 21</td>
+          <td class="jobTitle"><a href="#">Frontend Developer</a></td>
+          <td class="grey">So Ho</td>
+        </tr>
+        <tr>
+          <td class="grey">June 22</td>
+          <td class="jobTitle"><a href="#">Senior Python Developer / Cofounder</a></td>
+          <td class="grey">Flatiron</td>
+        </tr>
+      </table>
+    </main>
+  </body>
 </html>

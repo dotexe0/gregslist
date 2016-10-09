@@ -13,6 +13,7 @@ header {
   left: 0;
 
 }
+
 .logo {
   display: inline-block;
   margin-left: 10px;
@@ -36,35 +37,64 @@ nav.ul {
 
 ul {
   list-style: none;
-
+  padding: 0;
 }
+
 .inputbox {
-    /*width: 100px;
-    height: 50px;
-    line-height: 19px;*/
+  width: 200px;
+  height: 20px;
+  border: 1px solid #E0E0E0;
+  border-radius: 3px;
+  box-sizing: border-box;
 }
 
-.button {
+#magnifier {
   background: url("magnifying-glass.png") no-repeat;
+  background-size: cover;
   cursor: pointer;
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
+  border: solid 1px #E0E0E0;
+  border-radius: 3px;
+  vertical-align: bottom;
 }
 
 .navigate-pages li {
   display: inline;
   border: 1px solid #E0E0E0;
-  border-radius: 3px;
   padding: 5px;
   color: black;
+}
+
+.left {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.middle {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: -5px;
+}
+
+.right {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px; 
+  margin-left: -5px;  
 }
 
 table {
   text-align: left;
 }
 
-td, li {
-  color: #E0E0E0
+.grey{
+  color: #b6b6b6;
+}
+
+.jobTitle {
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 a {
